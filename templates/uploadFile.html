@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href={{ url_for('static', filename='styles/home.css')}}
+    rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Welcome {{name}}</h1>
+        <form
+            action="/upload"
+            method="POST"
+            enctype="multipart/form-data">
+
+            <input type="file" name="file" />
+            <input type="submit" />
+        </form>
+        <p>{{message}}</p>
+    </div>
+    <div>
+        <img src="{{ url_for('img1') }}" width="100%">
+    </div>
+    <div>
+        <img src="{{ url_for('img2') }}" width="100%">
+    </div>
+      <div>
+        <img src="{{ url_for('img3') }}" width="100%">
+    </div>
+
+</body>
+</html>
