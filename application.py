@@ -1,7 +1,7 @@
+import numpy as np
 import matplotlib as matplotlib
 from flask import Flask, request, render_template, Response
 import cv2
-import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.linear_model import LinearRegression
